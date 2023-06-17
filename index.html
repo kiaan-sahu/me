@@ -1,10 +1,190 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-   </body>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Kiaan Sahu</title>
+  <link rel="stylesheet" href="./style.css">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
+  
+@import
+ url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+* {
+  padding:0;
+  margin:0;
+  font-family: 'Armata', sans-serif;
+  box-sizing:border-box;
+}
+.hero {
+  height:100vh;
+  width:100%;
+  background: linear-gradient(-45deg, #ee7752, #fdd835, #4caf50, #673ab7 ,  #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+   background: linear-gradient(45deg, #ffcc5c 20%, #3c3c3c 20% 50%, #ff6f69 50% 80%, #3D9970 80%);
+}
+
+nav {
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding-top:5px;
+  padding-left:8%;
+  padding-right:8%;
+  text-shadow: 0 0 1px #000, 0 0 2px #000;
+
+}
+.logo {
+  color:white;
+  cursor:pointer;
+  font-size: 27px;
+  letter-spacing:1px;
+}
+span {
+  color: #1de9b6;
+  text-shadow: 0 0 1px #000, 0 0 2px #000;
+}
+nav ul li {
+  display:inline-block;
+  list-style-type:none;
+  padding:10px 10px;
+}
+nav ul li a {
+  color:white;
+  text-decoration:none;
+}
+nav ul li a:hover{
+  color:#f9004d;
+  transition:.4s;
+}
+.btn {
+  background-color:#009688;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  border:2px solid transparent;
+  padding:10px 25px;
+  border-radius:30px;
+  transition:transform .4s;
+  border-color: #004d40 ;
+}
+.btn:hover {
+  transform:scale(1.1);
+}
+.content {
+  position:absolute;
+  top:50%;
+  left:8%;
+  transform:translateY(-50%);
+}
+h1 {
+  color:white;
+  margin:20px 0px 5px;
+  font-size: 30px;
+}
+h3, h2 {
+  color:white;
+  font-size:27px;
+  margin-bottom:15px;
+}
+h4 {
+  color:#e0e0e0;
+  font-size:27px;
+  letter-spacing:2px;
+  margin-bottom:20px;
+}
+.share {
+  position:absolute;
+  top:90%;
+  left:8%;
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content: flex-start;
+  align-items:center;
+}
+.share p {
+  font-size:25px;
+  color:white;
+  margin-right:60px;
+}
+.share .social a {
+  display:inline-block;
+  color:white;
+  font-size:25px;
+  margin-right:15px;
+  transform:transition .5s;
+}
+.share .social a:hover {
+  transform: scale(1.5);
+}
+
+@media (max-width:950px) {
+  
+  nav .logo {
+    font-size:30px;
+  }
+  nav ul li {
+    padding:10px;
+    font-size:18px;
+  }
+  .content h1 {
+    font-size:50px;
+  }
+  .content h3 {
+    font-size:20px;
+  }
+  .content h4 {
+    font-size:15px;
+  }
+  
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+</style>
+
+</head>
+<body>
+<div class="hero">
+  <nav>
+   <h2 class="logo"><span>Kiaan</span>Sahu</h2>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#" >Contact</a></li>
+    </ul>
+  </nav>
+  
+  <div class="content">
+    <h3>Hello, I’m 👋</h3>
+    <h1><span>Kiaan</span> Sahu</h1>
+    <h2>Welcome to my website!🌟</h2>
+    <h4>  I am here to learn, explore and discover new projects! 🎉</h4>
+  </div>
+  
+  <div class="share">
+    <p>Lets Connect</p>
+    <div class="social">
+      <a href="https://www.facebook.com/KiaanSahu22"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/kiaan.sahu/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/kiaan-sahu/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/kiaan-sahu"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</div>
+</body>
 </html>
+
