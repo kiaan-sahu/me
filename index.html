@@ -10,36 +10,72 @@
   
 @import
  url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 
+  font-family: 'Armata', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+  padding-top:5px;
+  padding-bottom: 35px
+}
+
+main {
+    width: 90%;
+}
+
+footer {
+  padding-top: 35px;
+  padding-bottom:5px;
+}
+  
+body{
+    background: rgba(44, 62, 80,1.0);
+    display: flex;
+    flex-direction: column;
+    heigh: 100%;
+    align-items:center;
+    justify-content: space-between;
+  }
+  
 * {
   padding:0;
   margin:0;
-  font-family: 'Armata', sans-serif;
-  box-sizing:border-box;
 }
-.hero {
-  height:100vh;
-  width:100%;
-  background: #4e54c8;  
-  background-image: linear-gradient( 135deg, #8f94fb 10%, #465EFB 100%);
-  height: 100vh;
+  
+ h1 {
+  color:white;
 }
+h3, h2 {
+  color:white;
+}
+  
+h4 {
+  color:#e0e0e0;
+}
+  .hero: {
+    margin:20
+  }
 
 nav {
   display:flex;
   align-items:center;
   justify-content: space-between;
-  padding-top:5px;
-  padding-left:8%;
-  padding-right:8%;
   text-shadow: 0 0 1px #000, 0 0 2px #000;
-
 }
 .logo {
   color:white;
   cursor:pointer;
-  font-size: 27px;
-  letter-spacing:1px;
 }
 span {
   color: #1de9b6;
@@ -59,6 +95,7 @@ nav ul li a:hover{
   transform: scale(1.5);
   transition:.4s;
 }
+  
 .btn {
   background-color:#009688;
   color:white;
@@ -73,32 +110,9 @@ nav ul li a:hover{
 .btn:hover {
   transform:scale(1.1);
 }
-.content {
-  position:absolute;
-  top:50%;
-  left:8%;
-  transform:translateY(-50%);
-}
-h1 {
-  color:white;
-  margin:20px 0px 5px;
-  font-size: 30px;
-}
-h3, h2 {
-  color:white;
-  font-size:27px;
-  margin-bottom:15px;
-}
-h4 {
-  color:#e0e0e0;
-  font-size:27px;
-  letter-spacing:2px;
-  margin-bottom:20px;
-}
+
 .share {
-  position:absolute;
-  top:90%;
-  left:8%;
+  padding:5;
   display:flex;
   flex-wrap:nowrap;
   justify-content: flex-start;
@@ -117,7 +131,7 @@ h4 {
   transform:transition .5s;
 }
 .share .social a:hover {
-  transform: scale(1.5);
+  transform: scale(1.25);
   color: #1de9b6;
 }
 
@@ -153,30 +167,58 @@ h4 {
 		background-position: 0% 50%;
 	}
 }
+  
+  .content a:link, a:visited {
+  background-color: white;
+  color: black;
+  padding: 5px 5px;
+  margin:2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.content a:hover, a:active {
+  background-color: #1de9b6;
+  color: black;
+}
 
 </style>
 
 </head>
-<body>
-<div class="hero">
-  <nav>
-   <h2 class="logo"><span>Kiaan</span>Sahu</h2>
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#" >Contact</a></li>
-    </ul>
+<body >
+
+   <header>
+ <nav>
+   <h1 class="logo"><span>Kiaan </span>Sahu</h1>
   </nav>
-  
+   </header>
+
+  <main>
+
   <div class="content">
     <h3>Hello, I’m 👋</h3>
     <h1><span>Kiaan</span> Sahu</h1>
+        <br/>
+
     <h2>Welcome to my website!🌟</h2>
-    <h4>  I am here to learn, explore and discover new projects! 🎉</h4>
+    <h4>  I am here to learn, explore and discover new things! 🎉</h4>
+    
+    <br/>
+<h2 id="lets-connect-on">Lets Connect on</h2>
+    <h3 id="-linkedin-kiaan-sahu"><a href="https://www.linkedin.com/in/kiaan-sahu" target="_blank">💼 <b>Linkedin</b>: <i>kiaan-sahu</i></a></h3>
+<h3 id="github-kiaan-sahu"><a href="https://github.com/kiaan-sahu" target="_blank">💻Github: <i>kiaan-sahu</i></a></h3>
+<h3 id="xing-kiaan_sahu"><a href="https://www.xing.com/profile/Kiaan_Sahu/cv" target="_blank">⚡Xing: <i>Kiaan_Sahu</i></a></h3>
+<h3 id="codepen-kiaan-sahu"><a href="https://codepen.io/kiaan-sahu" target="_blank">🧮Codepen: <i>kiaan-sahu</i></a></h3>
+<h3 id="sketch-fab-kiaan-sahu"><a href="https://sketchfab.com/kiaan-sahu" target="_blank">🧊sketch fab: <i>kiaan-sahu</i></a></h3>
+<h3 id="stackoverflow-kiaan-sahu"><a href="https://stackoverflow.com/users/22085942/kiaan-sahu?tab=profile" target="_blank">🗃️stackoverflow: <i>kiaan-sahu</i></a></h3>
+<h3 id="-instagram-kiaan-sahu"><a href="https://www.instagram.com/kiaan.sahu/" target="_blank">📷 Instagram: <i>kiaan.sahu</i></a></h3>
+
   </div>
-  
+    </main>
+
+ <footer>
   <div class="share">
-    <p>Lets Connect</p>
     <div class="social">
       <a href="https://www.facebook.com/KiaanSahu22"><i class="fab fa-facebook-f"></i></a>
       <a href="https://www.instagram.com/kiaan.sahu/"><i class="fab fa-instagram"></i></a>
@@ -184,7 +226,7 @@ h4 {
       <a href="https://github.com/kiaan-sahu"><i class="fab fa-github"></i></a>
     </div>
   </div>
-</div>
-  
-</body>
+ </footer>
+
 </html>
+
